@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- Establishes the language for the webpage -->
+
+<head> <!-- Meta Data -->
+    <meta charset="UTF-8"> <!-- Establishes the character set and encoding -->
+    <meta name="author" content="Rodnyll Valmyr"> <!-- Metadata, Page Author -->
+    <meta name="description" content="Has all the content Rodnyll is using to learn how to code
+    a website for earning money as a side hustle."> <!-- Metadata, Page Description -->
+    <title> Rodnyll's Prototype Website </title> <!-- Name of the page shown on the tab -->
+    <link rel="icon" href="prototype_icon.png" type="image/x-icon"> <!-- Icon of the page shown on the tab -->
+    <link rel="stylesheet" href="main.css" type="text/css"> <!-- CSS Document for the page -->
+</head>
+
+<body style="background-color:#FFF;"> <!-- Front End; Whatever is shown on the page -->
+    <header id="web_header"> <!-- Header, top section of the page -->
+        <h1> Rodnyll's Site </h1>
+        <nav> <!-- Navigation Tag -->
+            <ul>
+                <li>
+                    <a href="#goals"> Goals </a>
+                </li>
+                <li>
+                    <a href="#plans"> Planning </a>
+                </li>
+                <li>
+                    <a href="#html_info"> Learning HTML </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr> <!-- Horizontal Rule -->
+
+    <article id="goals">
+        <h2> A Little Test Run</h2>
+        <p> Rodnyll's going to learn how to make websites through this prototype. <br> <!-- Paragraph, Break -->
+            Hopefully, he'll use the opportunity to learn how to create websites <br>
+            and earn money by being commissioned to do so.
+        </p>
+    </article>
+
+    <hr>
+
+    <article id="plans">
+        <h2> How Will Rodnyll Accomplish His Goal? </h2>
+        <p> Rodnyll is first going to learn all about <abbr title="Hyper Text Markup Language">HTML</abbr> <br> 
+            HTML is not a <em> programming language,</em> but rather a <em> markup language </em> <!-- Emphasis -->
+        </p>
+    </article>
+
+    <hr>
+
+    <article id="html_info">
+        <section id="list_info">
+            <h3> Lists </h3>
+            <p> Let's see what HTML is capable of, starting with <b> lists </b> <br>
+                There are two types of lists, the first one being <strong> ordered lists </strong>
+            </p>
+            <ol> <!-- Ordered List -->
+                <li> This is the ordered list's first element </li> <!-- List Element -->
+                <li> Then its second one </li>
+                <li> And then its third one </li>
+            </ol>
+            <p> The second type of list would be an <strong> unordered list. </strong> </p>
+            <ul> <!-- Unordered List -->
+                <li> This is the unordered list's first element </li>
+                <li> Then its second one </li>
+                <li> Then its third one </li>
+            </ul>
+            <p> Finally, the last type of list is a <strong> description list. </strong> </p>
+            <dl> <!-- Description List -->
+                <dt> This is the description list's first element </dt> <!-- Description Term Element -->
+                <dd> This is the first element's item's description </dd> <!-- Description Definition -->
+
+                <dt> This is the second element </dt>
+                <dd> Second element's description </dd>
+
+                <dt> This is the third element </dt>
+                <dd> Third element's description </dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section id="addresses_info">
+            <h3> Addresses </h3> <!-- Section 2 -->
+            <p> HTML can also format <b>addresses</b> <!-- Bold --> </p>
+            <address> <!-- Address -->
+                8603 Birchpond Lane <br>
+                Terre Haute, IN 47802
+            </address>
+        </section>
+
+        <hr>
+
+        <section id="links_info">
+            <h3> Links </h3> <!-- Section 3 -->
+            <p> Here's a <a href="https://en.wikipedia.org/wiki/HTML">Link</a> that redirects to a wikipedia page about HTML </p>
+            <p> This <a href="#">Link</a> brings you back to the top of the page </p>
+            <p> This <a href="About.HTML">Link</a> brings you to an about me of the web developer </p>
+        </section>
+
+        <hr>
+
+        <section id="articles_info">
+            <h3> Images and Figures </h3>
+            <p> Here's a random image of a capybara </p>
+            <img src="Odd_Dog_403x229.png" alt="Capybara Photo"
+            title="Capybara's are rodents apparently"
+            width="403" height="229" loading="lazy"> <!-- Image with a source from the file and an alternative 
+                text in case the image does not load. Title is the text that'll appear when hovering
+                over the photo. Width and Height give the dimensions of the image, and it's
+                recommended to provide that information for performance reasons. Always set loading
+                to "lazy" if the image has to be scrolled down to. -->
+            <p> Images can also have captions <br>
+                Here's an image in a figure, or an organized section
+            </p>
+            <figure> <!-- Figure Element, organizes text and images -->
+                <img src="Mercedes_1838x703.png" alt="Mercedes S-Class" width="720" >
+                <figcaption> 
+                    Rodnyll's Dream Car 
+                </figcaption>
+            </figure>
+            <p> Figures can also have pieces of code. <br>
+                Here's a function with Java Script
+            </p>
+            <figure>
+                <code>
+                    function msg(){ <br>
+                    &nbsp; alert("Hello Javatpoint"); <br>  
+                    }  
+                </code>
+            </figure>
+        </section>
+
+        <hr>
+        
+        <section id="semantics_info">
+            <h3> Semantic Elements </h3>
+            <p> Semantic elements help the html page to be formatted properly. </p>
+            <details>
+                <summary> &lt;section&gt; </summary>
+                <p> Divides a web page into standalone sections of <mark> related content </mark> </p> <!-- Mark, Highlights the text within the tag -->
+            </details>
+            <details>
+                <summary> &lt;article&gt; </summary>
+                <p> Self contained composition intended to be independently distributable or reusable </p>
+            </details>
+            <details>
+                <summary> &lt;nav&gt; </summary>
+                <p> Section of a page that links to other parts of the same page </p>
+            </details>
+            <details>
+                <summary> &lt;div&gt; </summary>
+                <p> Defines a division / section within an HTML document that can be assigned a tag and styled with CSS </p>
+            </details>
+            <details>
+                <summary> &lt;aside&gt; </summary>
+                <p> Puts a section of HTML code aside on a page when it is of lesser importance </p>
+            </details>
+            <details>
+                <summary> &lt;span&gt; </summary>
+                <p> Groups elements together for styling purposes </p>
+            </details>
+        </section>
+
+        <hr>
+
+        <section id="table">
+            <h3> Tables </h3>
+            <p> HTML can create tables that can show data </p>
+            <table>
+                <caption> My Daily Schedule </caption>
+                <tr> <!-- Headings -->
+                    <th> Time </th> <!-- Table Heading -->
+                    <th> Meal </th>
+                </tr>
+                <tr>
+                    <td> 
+                        <time datetime="6:00">6am</time>-<time datetime="10:00">10am</time>
+                    </td>
+                    <td>
+                        Breakfast
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <time datetime="11:00">11am</time>-<time datetime="2:00">2pm</time>
+                    </td>
+                    <td>
+                        Lunch
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <time datetime="5:00">5pm</time>-<time datetime="7:00">7pm</time>
+                    </td>
+                    <td>
+                        Dinner
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="forms">
+            <h3> Forms </h3>
+            <p> 
+                You can receive forms from users after they give an input <br>
+                The user can describe themselves here with this form
+            </p>
+            <form action="https://httpbin.org/get" method="get">
+                 <!-- 
+                    ATTRIBUTES
+
+                    Placeholder -> The placeholder text in the input that the user can see before typing in the input
+                    Autocomplete -> Autofills the textbox with a previous input from the user
+                    Autofocus -> Once the user opens the page, the user automatically has the textbox selected
+                    Require -> Makes the field required before the user can send the form
+                    Pattern -> Gives a fixed pattern for a form (Ex: [0-9]{2}[0-9]{2}[0-9]{4} for birthdays MM-DD-YYYY)
+                    Type -> "tel" for telephone, "text" for strings, "number" for numbers
+                    Step -> For "number" types, defines the set increment between each number
+                    Value -> The default value for the form
+                    Multiple -> Allows the user to select multiple options from a list dropdown
+                    Size -> The maximum amount of options the user can select from a list
+                -->
+                <fieldset>
+                    <legend> Personal Info </legend>
+                    <p>
+                        <label for="Name"> Full Name - </label>
+                        <input type="text" name="Name" id="Name" 
+                        placeholder="First And Last" required>
+                       
+                    </p>
+                    <p>
+                        <label for="Number"> Phone Number - </label>
+                        <input type="tel" name="Number" id="Number"
+                        placeholder="XXXXXXXXXX" 
+                        Pattern="[0-9]{2}[0-9]{2}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="Birthday"> Birth Day - </label>
+                        <input type="date" name="Birthday" id="Birthday"
+                        placeholder="MM-DD-YYYY">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend> Interests </legend>
+                    <p>
+                        <label for="Decade">Select a Decade - </label>
+                        <input type="number" name="Deacade" 
+                        id="Decade" step="10" min="1900" 
+                        max="2020" value="1900">
+                    </p>
+                    <p>
+                        <label for="Animal"> Select a Pet - </label>
+                        <select select="Animal" id="Animal">
+                            <option value="Dog"> Dog </option>
+                            <option value="Cat"> Cat </option>
+                            <option value="Fish"> Fish </option>
+                            <option value="Snake"> Snake </option>
+                            <option value="Salamander"> Salamander </option>
+                            <option value="Bird"> Bird </option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Drink"> Select a Drink - </label>
+                        <select select="Drink" for="Drink">
+                            <optgroup label="Coffees">
+                                <option value="Espresso"> Espresso </option>
+                                <option value="Frappuccino"> Frappuccino </option>
+                                <option value="Cappuccino"> Cappuccino </option>
+                            </optgroup>
+                            <optgroup label="Smoothies">
+                                <option value="Mango"> Mango </option>
+                                <option value="Strawberry"> Strawberry </option>
+                                <option value="Blueberry"> Blueberry </option>
+                            </optgroup>
+                            <optgroup label="Juices"> 
+                                <option value="Apple"> Apple </option>
+                                <option value="Orange"> Orange </option>
+                                <option value="Cranberry"> Cranberry </option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Game"> Select a Game - </label>
+                        <input type="text" name="Game" id="Game" list="Game-List">
+                        <datalist id="Game-List">
+                            <option value="Terraria"></option>
+                            <option value="Ultrakill"></option>
+                            <option value="Valorant"></option>
+                            <option value="Elden Ring"></option>
+                            <option value="Overwatch"></option>
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <button type="submit"> Submit </button>
+            </form>
+        </section>
+    </article>
+
+    <br>
+    <hr>
+
+    <footer> <!-- Footer, bottom section of the page -->
+        &lt;&lt; &copy; RV co. &gt; &gt; 
+        <p>
+            <a href="#"> Back to Top </a>
+        </p>
+    </footer>
+</body>
+
+</html>
