@@ -1,0 +1,33 @@
+/* 
+SELECTORS
+
+To edit the appearance of everything in an HTML document you can simply put the element
+(ex: h1 {} or h1, h2 {})
+
+You can assign an "id" attribute to an element in HTMl
+The "id" attribute should only exist once in an entire HTML file
+In CSS, an ID can be styled with "#" (ex: if the id of an element is id="paragraph" use "#paragraph {}"
+
+You can assign a "class" attribute to multiple elements in HTML
+The "class" attribute can exist multiple times throughout an HTML File
+In CSS, a class can be styled with "." (ex: .paragraph {})
+
+"*" Is a universal selector typically only used for CSS resets
+*/
+
+html {
+    font-size: 22px;
+    align-items: center;
+}
+
+body {
+    background-color: white;
+    color: black
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
